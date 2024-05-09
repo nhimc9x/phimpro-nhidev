@@ -10,5 +10,9 @@
 }
 
 html {
-  @apply font-Niramit text-[12px];
+  @apply font-Niramit text-[16px];
+}
+
+.navbar__item--active {
+  
 }
