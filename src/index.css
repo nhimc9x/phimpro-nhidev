@@ -9,10 +9,18 @@
   -webkit-tap-highlight-color: transparent;
 }
 
+body {
+  @apply bg-ct-primary;
+}
+
 html {
   @apply font-Niramit text-[16px];
 }
 
-.navbar__item--active {
-  
+/* Custom Navigation */
+.swiper-button-prev, .swiper-button-next {
+  @apply size-[60px] rounded-full hover:bg-ct-secondary duration-200 cursor-pointer ;
+  &::after {
+    @apply text-[23px] font-bold text-white;
+  }
 }

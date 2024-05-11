@@ -23,8 +23,8 @@ export const Header = () => {
   }, [])
 
   return (
-    <div className="fixed top-0 left-0 right-0">
-      <div ref={headerRef} className="max-w-[1600px] w-full mx-auto h-[70px] flex justify-between items-center px-8">
+    <div ref={headerRef} className="fixed top-0 left-0 right-0 z-[999]">
+      <div className="max-w-[1600px] w-full mx-auto h-[70px] flex justify-between items-center px-8">
         <a href='' className="h-[60px]">
           <img className='h-full' src={phimProLogo} alt="" />
         </a>

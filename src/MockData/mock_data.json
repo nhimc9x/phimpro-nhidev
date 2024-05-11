@@ -1,0 +1,131 @@
+{
+  "status": true,
+  "items": [
+    {
+      "modified": {
+        "time": "2024-05-10T00:11:27.000Z"
+      },
+      "_id": "9f6c3ea07d9b1c9e0c94d6a3b21398de",
+      "name": "Ước Mình Cùng Bay",
+      "slug": "uoc-minh-cung-bay",
+      "origin_name": "I Wish We Could Fly Together",
+      "poster_url": "https://img.phimapi.com/upload/vod/20240404-1/518e2ccafaaca1bf161e9ebd152d9e6d.jpg",
+      "thumb_url": "https://img.phimapi.com/upload/vod/20240404-1/40d6aa5219ba14a2083adce7eac50adb.jpg",
+      "year": 2024
+    },
+    {
+      "modified": {
+        "time": "2024-05-09T08:11:59.000Z"
+      },
+      "_id": "1e758001ab9f2c3f245bf74eea157faf",
+      "name": "Xin Hãy Yêu Anh Như Vậy",
+      "slug": "xin-hay-yeu-anh-nhu-vay",
+      "origin_name": "Men in Love",
+      "poster_url": "https://img.phimapi.com/upload/vod/20240504-1/e7740060fe3f6652fb2e974041ce8e83.jpg",
+      "thumb_url": "https://img.phimapi.com/upload/vod/20240504-1/fda559198f2bd641c970bb31b1d7dd9a.jpg",
+      "year": 2024
+    },
+    {
+      "modified": {
+        "time": "2024-05-09T08:11:35.000Z"
+      },
+      "_id": "d5a6c99c922f6812fee92973a43ce0db",
+      "name": "We Are Series: Chính Là Ta Yêu Nhau",
+      "slug": "we-are-series-chinh-la-ta-yeu-nhau",
+      "origin_name": "We Are",
+      "poster_url": "https://img.phimapi.com/upload/vod/20240411-1/a3065778213735c5c840d8dc0b2b1a47.jpg",
+      "thumb_url": "https://img.phimapi.com/upload/vod/20240411-1/8fbc6a7484ad13a9531e35ac50bd9c5f.jpg",
+      "year": 2024
+    },
+    {
+      "modified": {
+        "time": "2024-05-09T08:11:22.000Z"
+      },
+      "_id": "1016525395a57d3582edf0b6402ff848",
+      "name": "Vân Trung Cư Tam Tử",
+      "slug": "van-trung-cu-tam-tu",
+      "origin_name": "The Mirage House in the Clouds",
+      "poster_url": "https://img.phimapi.com/upload/vod/20240427-1/7ee087d77a7e9996218686d1ab4e6a73.jpg",
+      "thumb_url": "https://img.phimapi.com/upload/vod/20240427-1/5cf1df13059e458fbb95db4e0730f7b4.jpg",
+      "year": 2024
+    },
+    {
+      "modified": {
+        "time": "2024-05-09T08:10:46.000Z"
+      },
+      "_id": "821e779cfa8e08b266028c1955cf8ab7",
+      "name": "Trạm Trưởng",
+      "slug": "tram-truong",
+      "origin_name": "Chief of Station",
+      "poster_url": "https://img.phimapi.com/upload/vod/20240508-1/83b321b84e2c17887be5c77073e040c9.jpg",
+      "thumb_url": "https://img.phimapi.com/upload/vod/20240508-1/c52cbb1f09933d4e77939d193aed1d7c.jpg",
+      "year": 2024
+    },
+    {
+      "modified": {
+        "time": "2024-05-09T08:10:32.000Z"
+      },
+      "_id": "35109f5ad05b4af6bf2f9279ef9d145c",
+      "name": "Thiếu Niên Babylon",
+      "slug": "thieu-nien-babylon",
+      "origin_name": "Young Babylon",
+      "poster_url": "https://img.phimapi.com/upload/vod/20240502-1/d0e20272560ac42f4732e85863c7d417.jpg",
+      "thumb_url": "https://img.phimapi.com/upload/vod/20240502-1/20d5a18a9a2252f8330543dd019ef6ae.jpg",
+      "year": 2024
+    },
+    {
+      "modified": {
+        "time": "2024-05-09T08:10:14.000Z"
+      },
+      "_id": "2fcf433e2ef21ffdb3745d4a1ad2faf7",
+      "name": "Thế Tử Biến Mất Rồi!",
+      "slug": "the-tu-bien-mat-roi",
+      "origin_name": "Missing Crown Prince",
+      "poster_url": "https://img.phimapi.com/upload/vod/20240425-1/7ab0a5cb170f1e0dafa4e9414b01c1c7.jpg",
+      "thumb_url": "https://img.phimapi.com/upload/vod/20240425-1/22f92d9ac296e75ff33a419f6fe30303.jpg",
+      "year": 2024
+    },
+    {
+      "modified": {
+        "time": "2024-05-09T08:09:59.000Z"
+      },
+      "_id": "eb7bfee7a00af6aedab37fdb7fc71d64",
+      "name": "Tu Viện Máu",
+      "slug": "tu-vien-mau",
+      "origin_name": "Immaculate",
+      "poster_url": "https://img.phimapi.com/upload/vod/20240509-1/ce39c1832c42524d50bc95423c02af98.jpg",
+      "thumb_url": "https://img.phimapi.com/upload/vod/20240509-1/cda1ddc448bb37ea36ec5752a5fab6f7.jpg",
+      "year": 2024
+    },
+    {
+      "modified": {
+        "time": "2024-05-09T08:09:47.000Z"
+      },
+      "_id": "825ab77fe4eb3419db2fc9c6ceff7146",
+      "name": "Tôi Sống Ở Nơi Khác",
+      "slug": "toi-song-o-noi-khac",
+      "origin_name": "What If",
+      "poster_url": "https://img.phimapi.com/upload/vod/20240507-1/cf8abb4a6047e9616b3370fba9122f5e.jpg",
+      "thumb_url": "https://img.phimapi.com/upload/vod/20240507-1/870f405cd889789a797387b2d6c72917.jpg",
+      "year": 2024
+    },
+    {
+      "modified": {
+        "time": "2024-05-09T08:09:25.000Z"
+      },
+      "_id": "49d86226f20f62ca878fd1b8e4cfc29c",
+      "name": "Phệ Tâm",
+      "slug": "phe-tam",
+      "origin_name": "Broken the Heart",
+      "poster_url": "https://img.phimapi.com/upload/vod/20240509-1/ee6cd718e28866b90985673f664beb4d.jpg",
+      "thumb_url": "https://img.phimapi.com/upload/vod/20240509-1/a9a41e0aae4dcc1e460b6b58aa28d8b9.jpg",
+      "year": 2024
+    }
+  ],
+  "pagination": {
+    "totalItems": 15854,
+    "totalItemsPerPage": 10,
+    "currentPage": 1,
+    "totalPages": 1586
+  }
+}
