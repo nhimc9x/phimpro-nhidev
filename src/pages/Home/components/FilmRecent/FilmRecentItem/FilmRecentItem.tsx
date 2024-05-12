@@ -4,9 +4,11 @@ import { Slider } from './Slider/Slider'
 type Props = {
   categoryName: string;
   linkTo: string;
+  page: string
 }
 
-export const FilmRecentItem = ({ categoryName, linkTo }: Props) => {
+export const FilmRecentItem = ({ categoryName, linkTo, page }: Props) => {
+
   return (
     <div className="mb-4">
       <div className="mb-2 flex justify-between items-center pr-8">
