@@ -18,7 +18,6 @@ type DataBannerType = {
 
 export const HeroBanner = () => {
 
-
   const dataApis: DataBannerType[] = mockData.items
 
 
