@@ -6,8 +6,8 @@ export const Navbar = () => {
       <MenuItem to='/' title='Trang chủ'/>
       <MenuItem to='/phim-le' title='Phim lẻ'/>
       <MenuItem to='/phim-bo' title='Phim bộ'/>
-      <MenuItem to='phim-hoat-hinh' title='Hoạt hình'/>
-      <MenuItem to='tv-show' title='TV show'/>
+      <MenuItem to='/hoat-hinh' title='Hoạt hình'/>
+      <MenuItem to='/tv-shows' title='TV show'/>
     </div>
   )
 }

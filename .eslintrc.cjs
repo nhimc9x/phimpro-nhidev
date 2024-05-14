@@ -25,6 +25,7 @@ module.exports = {
     "no-extra-boolean-cast": 0,
     "no-lonely-if": 1,
     "no-unused-vars": 1,
+    "@typescript-eslint/no-unused-vars": "warn",
     "no-trailing-spaces": 1,
     "no-multi-spaces": 1,
     "no-multiple-empty-lines": 1,

@@ -18,8 +18,8 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/phim-le' element={<Movies />} />
           <Route path='/phim-bo' element={<TVSeries />} />
-          <Route path='/phim-hoat-hinh' element={<Cartoons />} />
-          <Route path='/tv-show' element={<TVShows />} />
+          <Route path='/hoat-hinh' element={<Cartoons />} />
+          <Route path='/tv-shows' element={<TVShows />} />
         </Route>
         <Route path='*' element={<NotFound />} />
       </Routes>
