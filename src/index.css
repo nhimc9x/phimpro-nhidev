@@ -17,6 +17,20 @@ html {
   @apply font-Niramit text-[16px];
 }
 
+/* Custom ScrollBar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-ct-secondary;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-ct-text-color rounded-2xl;
+}
+::selection {
+  @apply text-ct-primary bg-ct-highlight-color;
+}
+
 /* Custom Navigation */
 .swiper-button-prev, .swiper-button-next {
   @apply size-[60px] rounded-full hover:bg-ct-secondary duration-200 cursor-pointer ;
