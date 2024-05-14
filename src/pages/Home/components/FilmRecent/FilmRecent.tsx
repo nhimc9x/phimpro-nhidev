@@ -9,10 +9,10 @@ export const FilmRecent = () => {
         <div className="text-2xl text-ct-highlight-color font-bold tracking-wider">Phim mới cập nhật</div>
         <div className="h-0.5 flex-1 bg-gradient-to-r to-80% from-ct-secondary to-transparent"></div>
       </div>
-      <FilmRecentItem categoryName='Phim lẻ' linkTo='/phim-le' page='2' />
-      <FilmRecentItem categoryName='Phim bộ' linkTo='/phim-bo' page='2' />
-      <FilmRecentItem categoryName='Hoạt hình' linkTo='/phim-hoat-hinh' page='4' />
-      <FilmRecentItem categoryName='TV Show' linkTo='/tv-show' page='5' />
+      <FilmRecentItem title='Phim lẻ' category='phim-le' />
+      <FilmRecentItem title='Phim bộ' category='phim-bo' />
+      <FilmRecentItem title='Hoạt hình' category='hoat-hinh' />
+      <FilmRecentItem title='TV Show' category='tv-shows' />
     </div>
   )
 }
