@@ -12,7 +12,7 @@ export const FilmRecentItem = ({ title, category }: Props) => {
     <div className="mb-4">
       <div className="mb-2 flex justify-between items-center pr-8">
         <div className="text-2xl font-semibold text-white tracking-wider capitalize">{title}</div>
-        <NavLink to={`/${category}`}
+        <NavLink to={category}
           className="text-white text-lg px-4 py-1 rounded-full
           hover:ring-ct-secondary ring-1 ring-transparent hover:bg-ct-secondary duration-300"
         >

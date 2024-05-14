@@ -7,6 +7,7 @@ import { Cartoons } from './pages/Cartoons/Cartoons'
 import { TVShows } from './pages/TVShows/TVShows'
 import { NotFound } from './pages/NotFound/NotFound'
 import ResetScroll from './components/ResetScroll/ResetScroll'
+import routes from './config/routes'
 
 function App() {
 
@@ -15,13 +16,13 @@ function App() {
       <ResetScroll />
       <Routes>
         <Route element={<MainLayout />}>
-          <Route path='/' element={<Home />} />
-          <Route path='/phim-le' element={<Movies />} />
-          <Route path='/phim-bo' element={<TVSeries />} />
-          <Route path='/hoat-hinh' element={<Cartoons />} />
-          <Route path='/tv-shows' element={<TVShows />} />
+          <Route path={routes.home} element={<Home />} />
+          <Route path={routes.movies} element={<Movies />} />
+          <Route path={routes.tvSeries} element={<TVSeries />} />
+          <Route path={routes.cartoons} element={<Cartoons />} />
+          <Route path={routes.tvShows} element={<TVShows />} />
         </Route>
-        <Route path='*' element={<NotFound />} />
+        <Route path={routes.notFound} element={<NotFound />} />
       </Routes>
     </Router>
   )
