@@ -1,7 +1,12 @@
-import React from 'react'
+import { FilmCategory } from '~/components/FilmCategory/FilmCategory'
 
 export const TVShows = () => {
+
   return (
-    <div>TVShows</div>
+    <>
+      <FilmCategory
+        category={'tv-shows'}
+      />
+    </>
   )
 }

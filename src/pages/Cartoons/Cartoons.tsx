@@ -1,7 +1,12 @@
-import React from 'react'
+import { FilmCategory } from '~/components/FilmCategory/FilmCategory'
 
 export const Cartoons = () => {
+
   return (
-    <div>Cartoons</div>
+    <>
+      <FilmCategory
+        category={'hoat-hinh'}
+      />
+    </>
   )
 }
