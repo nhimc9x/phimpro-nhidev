@@ -19,7 +19,7 @@ export type ListFilmType = {
   status: string;
   msg: string;
   data: Data;
-}
+};
 
 export type ListFilmItemType = RecentFilmItemType & {
   type: string;
@@ -29,8 +29,8 @@ export type ListFilmItemType = RecentFilmItemType & {
   episode_current: string;
   quality: string;
   lang: string;
-  category: { id: string; name: string; slug: string };
-  country: { id: string; name: string; slug: string };
+  category: Entity[];
+  country: Entity[];
 };
 
 type Data = {
@@ -42,7 +42,13 @@ type Data = {
   type_list: string;
   APP_DOMAIN_FRONTEND: string;
   APP_DOMAIN_CDN_IMAGE: string;
-}
+};
+
+type Entity = {
+  id: string;
+  name: string;
+  slug: string;
+};
 
 type SeoOnPage = {
   og_type: string;
@@ -50,14 +56,14 @@ type SeoOnPage = {
   descriptionHead: string;
   og_image: string[];
   og_url: string;
-}
+};
 
 type BreadCrumb = {
   name: string;
   slug?: string;
   isCurrent: boolean;
   position: number;
-}
+};
 
 type Params = {
   type_slug: string;
@@ -67,12 +73,12 @@ type Params = {
   filterType: string;
   sortField: string;
   sortType: string;
-  pagination: Pagination
-}
+  pagination: Pagination;
+};
 
 type Pagination = {
   totalItems: number;
   totalItemsPerPage: number;
   currentPage: number;
   totalPages: number;
-}
+};

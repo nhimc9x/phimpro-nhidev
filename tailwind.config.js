@@ -20,6 +20,22 @@ export default {
         'ct-secondary': '#272727',
         'ct-highlight-color': '#ffd233',
         'ct-text-color': '#a3a1be'
+      },
+      backgroundImage: {
+        'radial-gradient': 'radial-gradient(circle, rgba(15,15,15,0.2) 50%, rgba(15,15,15,1) 90%)'
+      },
+      animation: {
+        'fade-show': 'fade 1s ease-in-out'
+      },
+      keyframes: {
+        'fade': {
+          to: {
+            'opacity': 0
+          },
+          from: {
+            'opacity': 1
+          }
+        }
       }
     }
   },
