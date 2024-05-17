@@ -8,6 +8,7 @@ import { TVShows } from './pages/TVShows/TVShows'
 import { NotFound } from './pages/NotFound/NotFound'
 import ResetScroll from './components/ResetScroll/ResetScroll'
 import routes from './config/routes'
+import { SearchResults } from './pages/SearchResults/SearchResults'
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
           <Route path={routes.tvSeries} element={<TVSeries />} />
           <Route path={routes.cartoons} element={<Cartoons />} />
           <Route path={routes.tvShows} element={<TVShows />} />
+          <Route path={routes.searchResults} element={<SearchResults />} />
         </Route>
         <Route path={routes.notFound} element={<NotFound />} />
       </Routes>

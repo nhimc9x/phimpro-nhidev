@@ -13,7 +13,7 @@ export const CustomPagination = ({ setPage, page }: Props) => {
 
   const scrollToTop = useCallback(() => {
     window.scroll({
-      top: 300,
+      top: 0,
       behavior: 'smooth'
     })
   }, [])

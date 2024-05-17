@@ -4,5 +4,6 @@ export default {
   tvSeries: '/phim-bo',
   cartoons: '/hoat-hinh',
   tvShows: '/tv-shows',
+  searchResults: '/tim-kiem',
   notFound: '*'
 }

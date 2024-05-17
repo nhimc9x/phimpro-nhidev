@@ -1,9 +1,16 @@
 import { useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 export const Search = () => {
 
+  const navigate = useNavigate()
+
   const [searchTerm, setSearchTerm] = useState<string>('')
+
+  const handleSearch = () => {
+    if (searchTerm.trim() === '') return
+    navigate(`/tim-kiem?keyword=${searchTerm}`)
+  }
 
   return (
     <div className="">
@@ -17,13 +24,12 @@ export const Search = () => {
           required
           onChange={e => setSearchTerm(e.target.value)}
         />
-
-        <NavLink
-          to={searchTerm.trim() === '' ? '' : `/tim-kiem?keyword=${searchTerm}`}
+        <div
+          onClick={handleSearch}
           className="text-lg text-ct-primary bg-ct-highlight-color px-4 py-2 font-semibold active:scale-110 hover:scale-105 cursor-pointer"
         >
           Tìm kiếm
-        </NavLink>
+        </div>
       </form>
     </div>
   )
