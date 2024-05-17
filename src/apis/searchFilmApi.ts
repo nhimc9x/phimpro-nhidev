@@ -8,7 +8,7 @@ export const searchFilmApi = createApi({
   }),
   endpoints: (builer) => ({
     searchFilmByKeyword: builer.query<ListFilmType, { keyword: string; limit?: number }>({
-      query: ({ keyword, limit = 20 }) => `?keyword=${keyword}&limit=${limit}`
+      query: ({ keyword, limit = 24 }) => `?keyword=${keyword}&limit=${limit}`
     })
   })
 })

@@ -22,7 +22,7 @@ export const Footer = () => {
         </a>
       </div>
       <div className="text-sm text-ct-text-color font-light tracking-wide">
-        Copyright ©2023 All rights reserved | This website is made with by
+        Copyright ©2024 All rights reserved | This website is made with by
         &#10084; <a href="" className="text-ncs-active-color">Nhidev</a>
       </div>
     </div>
