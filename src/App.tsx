@@ -9,6 +9,7 @@ import { NotFound } from './pages/NotFound/NotFound'
 import ResetScroll from './components/ResetScroll/ResetScroll'
 import routes from './config/routes'
 import { SearchResults } from './pages/SearchResults/SearchResults'
+import { FilmDetail } from './pages/FilmDetail/FilmDetail'
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
           <Route path={routes.cartoons} element={<Cartoons />} />
           <Route path={routes.tvShows} element={<TVShows />} />
           <Route path={routes.searchResults} element={<SearchResults />} />
+          <Route path={routes.filmDetail} element={<FilmDetail />} />
         </Route>
         <Route path={routes.notFound} element={<NotFound />} />
       </Routes>

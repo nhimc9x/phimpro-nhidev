@@ -8,7 +8,7 @@ export const listFilmApi = createApi({
   }),
   endpoints: (builer) => ({
     getListFilmByCategory: builer.query<ListFilmType, { category: string; page?: number; limit?: number }>({
-      query: ({ category, page = 1, limit = 20 }) => `${category}?page=${page}&limit=${limit}`
+      query: ({ category, page = 1, limit = 20 }) => `/${category}?page=${page}&limit=${limit}`
     })
   })
 })

@@ -5,5 +5,6 @@ export default {
   cartoons: '/hoat-hinh',
   tvShows: '/tv-shows',
   searchResults: '/tim-kiem',
+  filmDetail: '/phim/:slugFilm',
   notFound: '*'
 }

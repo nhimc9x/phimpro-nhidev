@@ -14,7 +14,7 @@ export const Search = () => {
 
   return (
     <div className="">
-      <div className="text-2xl font-semibold text-white tracking-wider">Tìm Kiếm</div>
+      <div className="text-white text-3xl capitalize">Tìm kiếm</div>
       <form className="flex px-10 gap-3 mt-6">
         <input
           className="flex-1 bg-ct-secondary text-xl text-ct-text-color px-4 py-2 outline-none placeholder:text-gray-600"
