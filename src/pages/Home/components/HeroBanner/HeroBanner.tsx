@@ -6,6 +6,7 @@ import { useGetRecentUpdateFlimByPageQuery } from '../../../../apis/recentUpdate
 import { RecentFilmItemType } from '~/types/type'
 import loadingGif from '~/assets/loadlurk-loading.gif'
 import { Loading } from '~/components/Loading/Loading'
+import { NavLink } from 'react-router-dom'
 
 export const HeroBanner = () => {
   const savedBannerData = sessionStorage.getItem('bannerData')
@@ -101,11 +102,14 @@ export const HeroBanner = () => {
                 }}
                 className="w-[500px] h-[580px] bg-top bg-cover rounded-t-2xl relative"
               >
-                <div className="absolute cursor-pointer -right-9 top-16 size-[80px] rounded-full bg-red-600 grid place-content-center scale-100 hover:scale-110 duration-300">
+                <NavLink
+                  to={`/phim/${currentBanner?.slug}`}
+                  className="absolute cursor-pointer -right-9 top-16 size-[80px] rounded-full bg-red-600 grid place-content-center scale-100 hover:scale-110 duration-300"
+                >
                   <div className="text-white text-3xl ml-1">
                     <FaPlay />
                   </div>
-                </div>
+                </NavLink>
               </div>
             </div>
 

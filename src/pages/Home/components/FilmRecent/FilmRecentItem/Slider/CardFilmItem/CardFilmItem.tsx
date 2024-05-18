@@ -6,9 +6,12 @@ type Props = {
 }
 export const CardFilmItem = ({ dataFilmItem }: Props) => {
   return (
-    <NavLink to='' className="h-[400px] w-full flex flex-col rounded hover:bg-ct-secondary">
+    <NavLink
+      to={`/phim/${dataFilmItem?.slug}`}
+      className="h-[400px] w-full flex flex-col rounded hover:bg-ct-secondary"
+    >
       <div
-        style={{ backgroundImage: dataFilmItem ? `url(https://img.phimapi.com/${dataFilmItem.poster_url})` : '#fff' }}
+        style={{ backgroundImage: dataFilmItem ? `url(https://img.phimapi.com/${dataFilmItem?.poster_url})` : '#fff' }}
         className="flex-1 m-3 bg-top bg-cover rounded-t-sm overflow-hidden flex flex-col justify-between"
       >
         <div className="bg-ct-highlight-color/80 px-2 py-0.5 text-lg w-max text-ct-primary font-semibold">{dataFilmItem?.episode_current}</div>
@@ -21,6 +24,6 @@ export const CardFilmItem = ({ dataFilmItem }: Props) => {
       <div className="h-[80px] px-6 flex flex-col">
         <div className="text-xl text-ct-text-color line-clamp-2 font-semibold">{dataFilmItem?.name}</div>
       </div>
-    </NavLink>
+    </NavLink >
   )
 }

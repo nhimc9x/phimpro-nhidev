@@ -33,6 +33,27 @@ export type ListFilmItemType = RecentFilmItemType & {
   country: Entity[];
 };
 
+export type FilmDetailType = {
+  status: boolean;
+  msg: string;
+  movie: IMovieType;
+  episodes: Episodes[]
+};
+
+export interface IMovieType extends ListFilmItemType, RecentFilmItemType {
+  created: { time: string };
+  content: string;
+  status: string;
+  is_copyright: boolean;
+  trailer_url: string;
+  episode_total: string;
+  notify: string;
+  showtimes: string;
+  view: number;
+  actor: string[];
+  director: string[];
+}
+
 type Data = {
   seoOnPage: SeoOnPage;
   breadCrumb: BreadCrumb[];
@@ -75,6 +96,19 @@ type Params = {
   sortType: string;
   pagination: Pagination;
 };
+
+export type Episodes = {
+  server_name: string;
+  server_data: ServerData[];
+}
+
+export type ServerData = {
+  name: string;
+  slug: string;
+  filename: string;
+  link_embed: string;
+  link_m3u8: string;
+}
 
 type Pagination = {
   totalItems: number;
