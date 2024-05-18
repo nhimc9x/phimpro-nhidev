@@ -5,13 +5,14 @@ import { CustomPagination } from '../CustomPagination/CustomPagination'
 import { useState } from 'react'
 import { useGetListFilmByCategoryQuery } from '~/apis/listFilmsApi'
 
-export const FilmCategory = ({ category }: {category: string}) => {
+export const FilmCategory = ({ category }: { category: 'phim-le' | 'phim-bo' | 'hoat-hinh' | 'tv-shows' }) => {
+
 
   const [page, setPage] = useState<number>(1)
 
-  const { data, isLoading, error } = useGetListFilmByCategoryQuery({ category: category, page: page })
+  const { data, isFetching, error } = useGetListFilmByCategoryQuery({ category: category, page: page, limit: 32 })
 
-  if (isLoading) return (
+  if (isFetching) return (
     <div className="h-dvh">
       <Loading />
     </div>
@@ -27,13 +28,13 @@ export const FilmCategory = ({ category }: {category: string}) => {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-4 gap-x-3 gap-y-0 px-8 mb-10">
+      <div className="grid grid-cols-4 gap-x-6 gap-y-0 px-8 mb-10">
         {data?.data.items.map(dataFilm =>
           <CardFilmPro key={dataFilm._id} dataFilmItem={dataFilm} />
         )}
       </div>
       <div className="h-20">
-        <CustomPagination setPage={setPage} page={page} />
+        <CustomPagination totalPages={data?.data.params.pagination.totalPages || 10} setPage={setPage} page={page} />
       </div>
     </div>
   )

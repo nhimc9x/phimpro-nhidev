@@ -8,13 +8,14 @@ type Props = {
 export const CardFilmPro = ({ dataFilmItem }: Props) => {
 
   return (
-    <NavLink to=''
+    <NavLink to={`/phim/${dataFilmItem.slug}`}
       className="w-full h-[450px] flex flex-col rounded hover:bg-ct-secondary hover:scale-110 duration-200 shadow-xl shadow-transparent hover:shadow-black/40 group"
     >
 
       <img
         className='h-[300px] group-hover:h-[200px] object-top object-cover duration-300 m-3 rounded-t overflow-hidden'
         src={`https://img.phimapi.com/${dataFilmItem.poster_url}`}
+        loading="lazy"
         alt=""
       />
 

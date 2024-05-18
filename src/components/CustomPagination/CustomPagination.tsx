@@ -2,13 +2,14 @@ import { useCallback, useEffect, useState } from 'react'
 import { useDebounce } from 'use-debounce';
 
 type Props = {
+  totalPages: number;
   setPage: React.Dispatch<React.SetStateAction<number>>;
   page: number;
 }
 
-export const CustomPagination = ({ setPage, page }: Props) => {
-  const [currentPage, setCurrentPage] = useState<number>(1)
-  const totalPages = 100
+export const CustomPagination = ({ totalPages, setPage, page }: Props) => {
+  const [currentPage, setCurrentPage] = useState<number>(page)
+  // const totalPages = 100
   const [checker, setChecker] = useState<string>('')
 
   const scrollToTop = useCallback(() => {
@@ -28,7 +29,7 @@ export const CustomPagination = ({ setPage, page }: Props) => {
       setPage(currentPageDebounce)
       scrollToTop()
     }
-  }, [currentPageDebounce, scrollToTop, setPage])
+  }, [currentPageDebounce, setPage, totalPages])
 
   const handlePrevPage = () => {
     currentPage === 1 ?
