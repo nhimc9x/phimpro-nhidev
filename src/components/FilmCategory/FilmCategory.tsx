@@ -22,13 +22,13 @@ export const FilmCategory = ({ category }: { category: 'phim-le' | 'phim-bo' | '
       <div className="relative">
         <img className="w-full h-[400px] object-cover" src={wallImg} alt="" />
         <div className="absolute top-0 left-0 bottom-0 right-0 w-full h-full bg-radial-gradient flex items-end">
-          <div className="w-[80%] mx-auto mb-20">
-            <div className="text-6xl text-white font-bold capitalize mb-6">{data?.data.titlePage}</div>
+          <div className="sms:w-[80%] w-[90%] mx-auto md:mb-20 sms:mb-10 mb-4">
+            <div className="md:text-6xl text-5xl text-white font-bold capitalize md:mb-6 mb-4">{data?.data.titlePage}</div>
             <div className="text-3xl text-ct-text-color leading-10">{data?.data.seoOnPage.descriptionHead}</div>
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-4 gap-x-6 gap-y-0 px-8 mb-10">
+      <div className="max-w-max w-full mx-auto grid xl:grid-cols-4 mdl:grid-cols-3 sm:grid-cols-2 grid-cols-1 mdl:px-8 px-6 gap-4 mb-10">
         {data?.data.items.map(dataFilm =>
           <CardFilmPro key={dataFilm._id} dataFilmItem={dataFilm} />
         )}

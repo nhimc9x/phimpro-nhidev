@@ -13,6 +13,7 @@ export default {
         'xss': '375px',
         'xs': '475px',
         'sms': '575px',
+        'md': '800px',
         'mdl': '960px'
       },
       colors: {

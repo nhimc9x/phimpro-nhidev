@@ -6,7 +6,7 @@ export const Home = () => {
   return (
     <div className="">
       <HeroBanner />
-      <div className="px-6 mt-14">
+      <div className="xs:px-6 px-4 mt-14">
         <Search />
         <FilmRecent />
       </div>

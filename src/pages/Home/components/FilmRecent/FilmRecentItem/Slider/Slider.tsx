@@ -13,8 +13,26 @@ export const Slider = ({ category }: { category: string }) => {
   return (
     <>
       <Swiper
-        slidesPerView={5}
+        slidesPerView={1}
         spaceBetween={10}
+        breakpoints={{
+          575: {
+            slidesPerView: 2,
+            spaceBetween: 8
+          },
+          765: {
+            slidesPerView: 3,
+            spaceBetween: 8
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 8
+          },
+          1280: {
+            slidesPerView: 5,
+            spaceBetween: 8
+          }
+        }}
         navigation={true}
         modules={[Navigation]}
         className="mySwiper"
