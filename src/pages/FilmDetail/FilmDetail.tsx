@@ -28,7 +28,7 @@ export const FilmDetail = () => {
   )
 
   return (
-    <div className="px-8">
+    <div className="sms:px-8 px-6">
       <InfoFilm filmData={data?.movie} />
       <div className="h-[2px] bg-ct-secondary"></div>
       <div className="my-8">

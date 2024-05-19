@@ -9,7 +9,7 @@ export const CardFilmPro = ({ dataFilmItem }: Props) => {
 
   return (
     <NavLink to={`/phim/${dataFilmItem.slug}`}
-      className="w-full h-[450px] flex flex-col rounded hover:bg-ct-secondary hover:scale-110 duration-200 shadow-xl shadow-transparent hover:shadow-black/40 group"
+      className="w-full max-w-[360px] h-[450px] flex flex-col rounded hover:bg-ct-secondary hover:scale-110 duration-200 shadow-xl shadow-transparent hover:shadow-black/40 group"
     >
 
       <img
@@ -30,7 +30,7 @@ export const CardFilmPro = ({ dataFilmItem }: Props) => {
           <div className="text-ct-text-color font-bold">Quốc gia: {dataFilmItem.country[0].name}</div>
           <div className="text-ct-text-color font-bold">Tình trạng: {dataFilmItem.episode_current}</div>
           <div className="text-ct-text-color font-bold">Thời lượng: {dataFilmItem.time}</div>
-          <div className="text-ct-text-color font-bold line-clamp-2 w-full">Thể loại: {fomatCategoryToString(dataFilmItem.category)}</div>
+          <div className="text-ct-text-color font-bold line-clamp-1 w-full">Thể loại: {fomatCategoryToString(dataFilmItem.category)}</div>
         </div>
       </div>
     </NavLink>

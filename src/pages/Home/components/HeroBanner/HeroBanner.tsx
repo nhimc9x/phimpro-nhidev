@@ -2,9 +2,8 @@ import { useEffect, useState } from 'react'
 import { FaPlay } from 'react-icons/fa'
 import { FaChevronLeft } from 'react-icons/fa'
 import { FaChevronRight } from 'react-icons/fa'
-import { useGetRecentUpdateFlimByPageQuery } from '../../../../apis/recentUpdateFilmApi'
+import { useGetRecentUpdateFlimByPageQuery } from '~/apis/recentUpdateFilmApi'
 import { RecentFilmItemType } from '~/types/type'
-import loadingGif from '~/assets/loadlurk-loading.gif'
 import { Loading } from '~/components/Loading/Loading'
 import { NavLink } from 'react-router-dom'
 
@@ -64,60 +63,54 @@ export const HeroBanner = () => {
   }
 
   return (
-    <div
-      style={{
-        backgroundImage:
-          `radial-gradient(circle, rgba(15,15,15,0.2) 0%, rgba(15,15,15,1) 92%), url(${currentBanner?.thumb_url})`
-      }}
-      className="h-[700px] bg-top bg-cover relative flex items-end"
-    >
+    <div className="lg:h-[700px] h-[520px] relative">
+      <div
+        onClick={handlePrev}
+        className="absolute z-10 size-[60px] hover:bg-ct-secondary duration-200 transition-colors cursor-pointer rounded-full grid place-content-center left-2 top-1/2 -translate-y-1/2">
+        <FaChevronLeft className='text-[23px] text-white' />
+      </div>
+      <div
+        onClick={handleNext}
+        className="absolute z-10 size-[60px] hover:bg-ct-secondary duration-200 transition-colors cursor-pointer rounded-full grid place-content-center right-2 top-1/2 -translate-y-1/2">
+        <FaChevronRight className='text-[23px] text-white' />
+      </div>
       {!bannerData ? <Loading /> : (
-        <>
-          <div
-            onClick={handlePrev}
-            className="absolute size-[60px] hover:bg-ct-secondary duration-200 transition-colors cursor-pointer rounded-full grid place-content-center left-2 top-1/2 -translate-y-1/2">
-            <FaChevronLeft className='text-[23px] text-white' />
-          </div>
-          <div
-            onClick={handleNext}
-            className="absolute size-[60px] hover:bg-ct-secondary duration-200 transition-colors cursor-pointer rounded-full grid place-content-center right-2 top-1/2 -translate-y-1/2">
-            <FaChevronRight className='text-[23px] text-white' />
-          </div>
-
-          <div className="h-[600px] w-full flex gap-14 px-10">
-
-            <div className="flex-1 text-white mt-[80px] pl-10">
-              <div className="px-8 py-12 rounded">
-                <div className="text-7xl font-bold mb-6 line-clamp-3">{currentBanner?.name}</div>
-                <div className="bg-ct-highlight-color text-ct-primary text-xl font-semibold px-2 py-0.5 w-max mb-2 line-clamp-1">{currentBanner?.origin_name}</div>
+        <NavLink
+          to={`/phim/${currentBanner?.slug}`}
+          style={{
+            backgroundImage:
+              `radial-gradient(circle, rgba(15,15,15,0.2) 0%, rgba(15,15,15,1) 92%), url(${currentBanner?.thumb_url})`
+          }}
+          className="h-full bg-top bg-cover relative flex items-end"
+        >
+          <div className="h-[90%] w-full flex px-10">
+            <div className="md:basis-3/5 basis-full text-white mt-[90px] xl:pl-10 xs:pl-4 pl-0">
+              <div className="sms:p-10 p-2 rounded">
+                <div className="lg:text-7xl xs:text-5xl text-4xl font-bold mb-6 line-clamp-3">{currentBanner?.name}</div>
+                <div className="bg-ct-highlight-color text-ct-primary text-xl font-semibold w-max max-w-[275px] px-2 py-0.5 mb-2 line-clamp-1">{currentBanner?.origin_name}</div>
                 <div className="bg-blue-500 px-2 text-ct-primary py-0.5 w-max font-bold">{currentBanner?.year}</div>
               </div>
             </div>
-
-            <div className="flex items-end basis-[600px]">
+            <div className="md:flex hidden items-end basis-2/5">
               <div
                 style={{
                   backgroundImage:
                     `linear-gradient(rgba(15, 15, 15, 0.1) 0%, #0f0f0f 100%), url(${currentBanner?.poster_url})`
                 }}
-                className="w-[500px] h-[580px] bg-top bg-cover rounded-t-2xl relative"
+                className="w-[90%] max-w-[480px] h-[90%] bg-top bg-cover rounded-t-2xl relative"
               >
-                <NavLink
-                  to={`/phim/${currentBanner?.slug}`}
-                  className="absolute cursor-pointer -right-9 top-16 size-[80px] rounded-full bg-red-600 grid place-content-center scale-100 hover:scale-110 duration-300"
+                <div
+                  className="absolute cursor-pointer lg:-right-9 -right-8 top-16 lg:size-[80px] size-[62px] rounded-full bg-red-600 grid place-content-center scale-100 hover:scale-110 duration-300"
                 >
                   <div className="text-white text-3xl ml-1">
                     <FaPlay />
                   </div>
-                </NavLink>
+                </div>
               </div>
             </div>
-
           </div>
-
-        </>
+        </NavLink>
       )}
-
     </div>
   )
 }
