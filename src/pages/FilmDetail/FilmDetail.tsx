@@ -13,7 +13,7 @@ export const FilmDetail = () => {
 
   const { slugFilm } = useParams()
 
-  const { data, isFetching, error } = useGetFilmDetailBySlugQuery(slugFilm || '')
+  const { data, isFetching } = useGetFilmDetailBySlugQuery(slugFilm || '')
 
   const [currentEpisode, setCurrentEpisode] = useState<ServerData>()
 

@@ -11,19 +11,19 @@ export const Footer = () => {
         <div className="h-[1px] bg-ct-secondary w-full ml-2"></div>
       </div>
       <div className="flex justify-center items-center gap-4 mb-6">
-        <a href="" className="text-ct-text-color text-3xl hover:text-ct-highlight-color transition-all duration-200">
+        <a href="https://nhideveloper.id.vn" className="text-ct-text-color text-3xl hover:text-ct-highlight-color transition-all duration-200">
           <FaFacebookSquare />
         </a>
-        <a href="" className="text-ct-text-color text-3xl hover:text-ct-highlight-color transition-all duration-200">
+        <a href="https://github.com/nhimc9x" className="text-ct-text-color text-3xl hover:text-ct-highlight-color transition-all duration-200">
           <FaGithubSquare />
         </a>
-        <a href="" className="text-ct-text-color text-3xl hover:text-ct-highlight-color transition-all duration-200">
+        <a href="mailto:nhicomputer77@gmail.com" className="text-ct-text-color text-3xl hover:text-ct-highlight-color transition-all duration-200">
           <FaGooglePlusSquare />
         </a>
       </div>
       <div className="text-sm text-ct-text-color font-light tracking-wide">
         Copyright ©2024 All rights reserved | This website is made with by
-        &#10084; <a href="" className="text-ncs-active-color">Nhidev</a>
+        &#10084; <a href="https://nhideveloper.id.vn" className="text-ncs-active-color">Nhidev</a>
       </div>
     </div>
   )

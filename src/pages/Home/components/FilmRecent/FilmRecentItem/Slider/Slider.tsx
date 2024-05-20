@@ -8,7 +8,7 @@ import { SkeletonCard } from './CardFilmItem/SkeletonCard/SkeletonCard'
 
 export const Slider = ({ category }: { category: string }) => {
 
-  const { data, isLoading, error } = useGetListFilmByCategoryQuery({ category: category })
+  const { data, isLoading } = useGetListFilmByCategoryQuery({ category: category })
 
   return (
     <>

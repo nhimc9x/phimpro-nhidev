@@ -10,7 +10,7 @@ import { NavLink } from 'react-router-dom'
 export const HeroBanner = () => {
   const savedBannerData = sessionStorage.getItem('bannerData')
 
-  const { data, error } = useGetRecentUpdateFlimByPageQuery(1)
+  const { data } = useGetRecentUpdateFlimByPageQuery(1)
 
   const [bannerData, setBannerData] = useState<RecentFilmItemType[] | undefined>(() => {
     if (savedBannerData) return JSON.parse(savedBannerData)

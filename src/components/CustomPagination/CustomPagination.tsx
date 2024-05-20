@@ -9,7 +9,6 @@ type Props = {
 
 export const CustomPagination = ({ totalPages, setPage, page }: Props) => {
   const [currentPage, setCurrentPage] = useState<number>(page)
-  // const totalPages = 100
   const [checker, setChecker] = useState<string>('')
 
   const scrollToTop = useCallback(() => {
