@@ -38,7 +38,7 @@ export const Slider = ({ category }: { category: string }) => {
         className="mySwiper"
       >
         {isLoading ?
-          Array.from({ length: 5 }).map((data, index) => (
+          Array.from({ length: 5 }).map((_data, index) => (
             <SwiperSlide key={index}>
               <SkeletonCard />
             </SwiperSlide>
