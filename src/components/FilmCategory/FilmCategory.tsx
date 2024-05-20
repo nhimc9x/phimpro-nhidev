@@ -20,11 +20,11 @@ export const FilmCategory = ({ category }: { category: 'phim-le' | 'phim-bo' | '
   return (
     <div className="">
       <div className="relative">
-        <img className="w-full h-[400px] object-cover" src={wallImg} alt="" />
+        <img className="w-full xs:h-[400px] h-[440px] object-cover" src={wallImg} alt="" />
         <div className="absolute top-0 left-0 bottom-0 right-0 w-full h-full bg-radial-gradient flex items-end">
           <div className="sms:w-[80%] w-[90%] mx-auto md:mb-20 sms:mb-10 mb-4">
-            <div className="md:text-6xl text-5xl text-white font-bold capitalize md:mb-6 mb-4">{data?.data.titlePage}</div>
-            <div className="text-3xl text-ct-text-color leading-10">{data?.data.seoOnPage.descriptionHead}</div>
+            <div className="md:text-6xl xs:text-5xl text-4xl text-white font-bold capitalize md:mb-6 mb-4">{data?.data.titlePage}</div>
+            <div className="xs:text-3xl text-2xl text-ct-text-color leading-10">{data?.data.seoOnPage.descriptionHead}</div>
           </div>
         </div>
       </div>
