@@ -10,7 +10,7 @@ export const FilmCategory = ({ category }: { category: 'phim-le' | 'phim-bo' | '
 
   const [page, setPage] = useState<number>(1)
 
-  const { data, isFetching, error } = useGetListFilmByCategoryQuery({ category: category, page: page, limit: 32 })
+  const { data, isFetching } = useGetListFilmByCategoryQuery({ category: category, page: page, limit: 32 })
 
   if (isFetching) return (
     <div className="h-dvh">

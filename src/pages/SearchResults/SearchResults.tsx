@@ -9,7 +9,7 @@ export const SearchResults = () => {
   const query = new URLSearchParams(useLocation().search)
   const keyword = query.get('keyword')
 
-  const { data, isLoading, error } = useSearchFilmByKeywordQuery({ keyword: keyword || '' })
+  const { data, isLoading } = useSearchFilmByKeywordQuery({ keyword: keyword || '' })
 
   if (isLoading) return (
     <div className="h-dvh">

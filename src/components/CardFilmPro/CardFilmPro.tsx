@@ -11,14 +11,12 @@ export const CardFilmPro = ({ dataFilmItem }: Props) => {
     <NavLink to={`/phim/${dataFilmItem.slug}`}
       className="w-full max-w-[360px] h-[450px] flex flex-col rounded hover:bg-ct-secondary hover:scale-110 duration-200 shadow-xl shadow-transparent hover:shadow-black/40 group"
     >
-
       <img
         className='h-[300px] group-hover:h-[200px] object-top object-cover duration-300 m-3 rounded-t overflow-hidden'
         src={`https://img.phimapi.com/${dataFilmItem.poster_url}`}
         loading="lazy"
         alt=""
       />
-
       <div className="px-6 overflow-hidden">
         <div className="text-xl text-ct-text-color group-hover:text-white line-clamp-2 font-semibold mb-2">{dataFilmItem?.name}</div>
         <div className="flex gap-1.5 mb-2">

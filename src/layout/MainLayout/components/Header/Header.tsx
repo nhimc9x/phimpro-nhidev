@@ -50,11 +50,9 @@ export const Header = () => {
         <a href='' className="h-[60px]">
           <img className='h-full' src={phimProLogo} alt="" />
         </a>
-
         <div className="md:block hidden">
           <Navbar />
         </div>
-
         <div
           ref={navBarRef}
           className="md:hidden block">
@@ -78,9 +76,7 @@ export const Header = () => {
             <Navbar />
           </div>
         </div>
-
       </div>
     </div>
   )
 }
-
