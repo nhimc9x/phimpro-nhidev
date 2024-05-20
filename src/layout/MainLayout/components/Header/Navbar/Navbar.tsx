@@ -4,7 +4,7 @@ import { MenuItem } from './MenuItem/MenuItem'
 export const Navbar = () => {
   return (
     <div
-      className="flex text-xl h-full font-semibold text-ct-text-color gap-0 capitalize flex-col *:text-center *:py-3 shadow
+      className="flex md:text-xl text-2xl h-full font-semibold text-ct-text-color gap-0 capitalize flex-col *:text-center *:py-3 shadow
       md:flex-row md:gap-6 md:shadow-none"
     >
       <div className="grid: md:hidden place-content-center bg-[#414141] text-white text-2xl h-[70px] border-b border-ct-text-color mb-2">Danh Mục</div>
