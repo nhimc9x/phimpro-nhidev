@@ -24,12 +24,12 @@ export const Search = () => {
           required
           onChange={e => setSearchTerm(e.target.value)}
         />
-        <div
+        <button
           onClick={handleSearch}
           className="text-lg text-center text-ct-primary bg-ct-highlight-color px-4 py-3 font-semibold active:scale-110 hover:scale-105 cursor-pointer"
         >
           Tìm kiếm
-        </div>
+        </button>
       </form>
     </div>
   )
