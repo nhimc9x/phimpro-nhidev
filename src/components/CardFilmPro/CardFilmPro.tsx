@@ -13,7 +13,11 @@ export const CardFilmPro = ({ dataFilmItem }: Props) => {
     >
       <img
         className='h-[300px] group-hover:h-[200px] object-top object-cover duration-300 m-3 rounded-t overflow-hidden'
-        src={`https://img.phimapi.com/${dataFilmItem.poster_url}`}
+        src={
+          dataFilmItem.poster_url?.startsWith('http')
+            ? dataFilmItem.poster_url
+            : `https://phimimg.com/${dataFilmItem.poster_url?.replace(/^\//, '')}`
+        }
         loading="lazy"
         alt=""
       />

@@ -47,7 +47,7 @@ export const Header = () => {
   return (
     <div ref={headerRef} className="fixed top-0 left-0 right-0 z-[999]">
       <div className="max-w-[1600px] w-full mx-auto h-[70px] flex justify-between items-center min-[840px]:px-8 px-4">
-        <a href='' className="h-[60px]">
+        <a href='/' className="h-[60px]">
           <img className='h-full' src={phimProLogo} alt="" />
         </a>
         <div className="md:block hidden">
